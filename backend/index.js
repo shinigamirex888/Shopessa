@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 
 
 //routes
-const userRoutes=require("./src/routes/user");
+const authRoutes=require("./src/routes/auth");
 
 //env variable
 env.config();
@@ -23,7 +23,7 @@ mongoose
 
 //middlewares
 app.use(express.json());
-app.use('/api',userRoutes);
+app.use('/api',authRoutes);
 
 
 // app.get('/',(req,res,next)=>{
