@@ -1,13 +1,12 @@
-const express=require('express');
-const env=require('dotenv');
-const app=express();
-const bodyParser=require('body-parser');
+const express = require("express");
+const env = require("dotenv");
+const app = express();
+const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 
-
 //routes
-const adminRoutes=require("./src/routes/admin/auth");
-const authRoutes=require("./src/routes/auth")
+const adminRoutes = require("./src/routes/admin/auth");
+const authRoutes = require("./src/routes/auth");
 //env variable
 env.config();
 
@@ -23,9 +22,8 @@ mongoose
 
 //middlewares
 app.use(express.json());
-app.use('/api',authRoutes);
-app.use('./api',adminRoutes)
-
+app.use("/api", authRoutes);
+app.use("/api", adminRoutes);
 
 // app.get('/',(req,res,next)=>{
 //     res.status(200).json({
@@ -33,6 +31,6 @@ app.use('./api',adminRoutes)
 //     })
 // })
 
-app.listen(process.env.PORT,()=>{
-    console.log('Backend started Boss');
+app.listen(process.env.PORT, () => {
+  console.log("Backend started Boss");
 });
