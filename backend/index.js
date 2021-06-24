@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 
 
 //routes
-const authRoutes=require("./src/routes/auth");
+const authRoutes=require("./src/routes/admin/auth");
 
 //env variable
 env.config();
