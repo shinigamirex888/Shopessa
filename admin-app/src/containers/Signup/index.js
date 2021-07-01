@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "./../../components/Layout/index";
 import { Container, Form, Row, Col, Button } from "react-bootstrap";
-import inputt from "../../components/UI/input";
+import Input from "../../components/UI/Input";
 
 
 export default function Signup() {
@@ -14,13 +14,13 @@ export default function Signup() {
               <Form>
                 <Row>
                   <Col md={6}>
-                    <inputt>
+                      <Input
                         label="first name"
                         placeholder="first name"
                         value=""
                         type="text"
                         onChange={()=>{}}
-                    </inputt>
+                      />
                     <Form.Group controlId="formBasicPassword">
                       <Form.Label>Last Name</Form.Label>
                       <Form.Control type="text" placeholder="Last Name" />
