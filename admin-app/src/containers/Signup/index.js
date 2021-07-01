@@ -15,30 +15,38 @@ export default function Signup() {
                 <Row>
                   <Col md={6}>
                       <Input
-                        label="first name"
-                        placeholder="first name"
+                        label="First Name"
+                        placeholder="First Name"
                         value=""
                         type="text"
                         onChange={()=>{}}
                       />
-                    <Form.Group controlId="formBasicPassword">
-                      <Form.Label>Last Name</Form.Label>
-                      <Form.Control type="text" placeholder="Last Name" />
-                    </Form.Group>
+                    </Col> 
+                    <Col md={6}> 
+                    <Input
+                        label="Last Name"
+                        placeholder="Last Name"
+                        value=""
+                        type="text"
+                        onChange={()=>{}}
+                      />
                   </Col>
                 </Row>
-                <Form.Group controlId="formBasicEmail">
-                  <Form.Label>Email address</Form.Label>
-                  <Form.Control type="email" placeholder="Enter email" />
-                  <Form.Text className="text-muted">
-                    We'll never share your email with anyone else.
-                  </Form.Text>
-                </Form.Group>
+                <Input
+                        label="Email"
+                        placeholder="Email"
+                        value=""
+                        type="email"
+                        onChange={()=>{}}
+                      />
 
-                <Form.Group controlId="formBasicPassword">
-                  <Form.Label>Password</Form.Label>
-                  <Form.Control type="password" placeholder="Password" />
-                </Form.Group>
+                      <Input
+                        label="Password"
+                        placeholder="Password"
+                        value=""
+                        type="password"
+                        onChange={()=>{}}
+                      />
                 <Button variant="primary" type="submit">
                   Submit
                 </Button>

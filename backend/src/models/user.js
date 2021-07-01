@@ -35,7 +35,7 @@ const userSchema=new mongoose.Schema({
     hash_password:{
         type:String,
         required:true,
-        min:8
+        min:6
     },
     role:{
         type:String,
