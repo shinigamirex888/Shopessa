@@ -1,10 +1,12 @@
 const express = require('express');
 const slugify = require('slugify');
 const Category=require('../models/category')
-const {addCategory}=require('../controller/category');
+const {addCategory,getCategories}=require('../controller/category');
 const router=express.Router();
 
 
 router.post('/category/create',addCategory);
+router.get('/category/getcategory',getCategories);
+
 
 module.exports =router;
